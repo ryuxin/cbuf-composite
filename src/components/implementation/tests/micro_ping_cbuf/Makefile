@@ -1,0 +1,8 @@
+C_OBJS=micro_ping.o
+ASM_OBJS=
+COMPONENT=micro_pingp.o
+INTERFACES=
+DEPENDENCIES=micro_pong sched timed_blk printc cbuf_mgr valloc mem_mgr_large lock
+IF_LIB=
+
+include ../../Makefile.subsubdir

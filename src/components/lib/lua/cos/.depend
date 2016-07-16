@@ -1,0 +1,353 @@
+lapi.o: ../lua-5.2.1/src/lapi.c ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lapi.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/ldebug.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/ltable.h \
+ ../lua-5.2.1/src/lundump.h ../lua-5.2.1/src/lvm.h
+lcode.o: ../lua-5.2.1/src/lcode.c ../../musl-1.1.11/include/stdlib.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/alloca.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lcode.h \
+ ../lua-5.2.1/src/llex.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lzio.h \
+ ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/lopcodes.h \
+ ../lua-5.2.1/src/lparser.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/lstring.h \
+ ../lua-5.2.1/src/ltable.h ../lua-5.2.1/src/lvm.h
+lctype.o: ../lua-5.2.1/src/lctype.c ../lua-5.2.1/src/lctype.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/llimits.h
+ldebug.o: ../lua-5.2.1/src/ldebug.c ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stddef.h ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lapi.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/lcode.h \
+ ../lua-5.2.1/src/llex.h ../lua-5.2.1/src/lopcodes.h \
+ ../lua-5.2.1/src/lparser.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/ldo.h ../lua-5.2.1/src/lfunc.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/ltable.h ../lua-5.2.1/src/lvm.h
+ldo.o: ../lua-5.2.1/src/ldo.c ../../musl-1.1.11/include/setjmp.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/setjmp.h \
+ ../../musl-1.1.11/include/stdlib.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/alloca.h ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lapi.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/ldebug.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/lopcodes.h ../lua-5.2.1/src/lparser.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/ltable.h \
+ ../lua-5.2.1/src/lundump.h ../lua-5.2.1/src/lvm.h
+ldump.o: ../lua-5.2.1/src/ldump.c ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/lundump.h
+lfunc.o: ../lua-5.2.1/src/lfunc.c ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lfunc.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/llimits.h \
+ ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h
+lgc.o: ../lua-5.2.1/src/lgc.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/ltable.h
+llex.o: ../lua-5.2.1/src/llex.c ../../musl-1.1.11/include/locale.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lctype.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/llex.h ../lua-5.2.1/src/lparser.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/ltable.h
+lmem.o: ../lua-5.2.1/src/lmem.c ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lgc.h
+lobject.o: ../lua-5.2.1/src/lobject.c ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdio.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/alloca.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../../musl-1.1.11/include/math.h \
+ ../lua-5.2.1/src/lctype.h ../lua-5.2.1/src/llimits.h \
+ ../lua-5.2.1/src/ldebug.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/lvm.h
+lopcodes.o: ../lua-5.2.1/src/lopcodes.c ../lua-5.2.1/src/lopcodes.h \
+ ../lua-5.2.1/src/llimits.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../lua-5.2.1/src/luaconf.h
+lparser.o: ../lua-5.2.1/src/lparser.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lcode.h \
+ ../lua-5.2.1/src/llex.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lzio.h \
+ ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/lopcodes.h \
+ ../lua-5.2.1/src/lparser.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lstring.h \
+ ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/ltable.h
+lstate.o: ../lua-5.2.1/src/lstate.c ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lapi.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/ldebug.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/llex.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/ltable.h \
+ ../../musl-1.1.11/include/time.h
+lstring.o: ../lua-5.2.1/src/lstring.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/lzio.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/lgc.h
+ltable.o: ../lua-5.2.1/src/ltable.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/lstring.h \
+ ../lua-5.2.1/src/ltable.h ../lua-5.2.1/src/lvm.h
+ltm.o: ../lua-5.2.1/src/ltm.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/lstring.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/ltable.h
+lundump.o: ../lua-5.2.1/src/lundump.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/ldebug.h \
+ ../lua-5.2.1/src/lstate.h ../lua-5.2.1/src/lobject.h \
+ ../lua-5.2.1/src/llimits.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/ldo.h \
+ ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lstring.h \
+ ../lua-5.2.1/src/lgc.h ../lua-5.2.1/src/lundump.h
+lvm.o: ../lua-5.2.1/src/lvm.c ../../musl-1.1.11/include/stdio.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/alloca.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../../musl-1.1.11/include/math.h \
+ ../lua-5.2.1/src/ldebug.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/llimits.h \
+ ../lua-5.2.1/src/ltm.h ../lua-5.2.1/src/lzio.h ../lua-5.2.1/src/lmem.h \
+ ../lua-5.2.1/src/ldo.h ../lua-5.2.1/src/lfunc.h ../lua-5.2.1/src/lgc.h \
+ ../lua-5.2.1/src/lopcodes.h ../lua-5.2.1/src/lstring.h \
+ ../lua-5.2.1/src/ltable.h ../lua-5.2.1/src/lvm.h
+lzio.o: ../lua-5.2.1/src/lzio.c ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/llimits.h \
+ ../lua-5.2.1/src/lmem.h ../lua-5.2.1/src/lstate.h \
+ ../lua-5.2.1/src/lobject.h ../lua-5.2.1/src/ltm.h \
+ ../lua-5.2.1/src/lzio.h
+lauxlib.o: ../lua-5.2.1/src/lauxlib.c ../../musl-1.1.11/include/errno.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/errno.h \
+ ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdio.h ../../musl-1.1.11/include/stdlib.h \
+ ../../musl-1.1.11/include/alloca.h ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lauxlib.h
+lbaselib.o: ../lua-5.2.1/src/lbaselib.c ../../musl-1.1.11/include/ctype.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdio.h ../../musl-1.1.11/include/stdlib.h \
+ ../../musl-1.1.11/include/alloca.h ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+lbitlib.o: ../lua-5.2.1/src/lbitlib.c ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+lcorolib.o: ../lua-5.2.1/src/lcorolib.c \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/alloca.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+ldblib.o: ../lua-5.2.1/src/ldblib.c ../../musl-1.1.11/include/stdio.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/alloca.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+liolib.o: ../lua-5.2.1/src/liolib.c ../../musl-1.1.11/include/errno.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/errno.h ../../musl-1.1.11/include/stdio.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/alloca.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+lmathlib.o: ../lua-5.2.1/src/lmathlib.c \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/alloca.h ../../musl-1.1.11/include/math.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+loslib.o: ../lua-5.2.1/src/loslib.c ../../musl-1.1.11/include/errno.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/errno.h \
+ ../../musl-1.1.11/include/locale.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/alloca.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../../musl-1.1.11/include/time.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+lstrlib.o: ../lua-5.2.1/src/lstrlib.c ../../musl-1.1.11/include/ctype.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stddef.h ../../musl-1.1.11/include/stdio.h \
+ ../../musl-1.1.11/include/stdlib.h ../../musl-1.1.11/include/alloca.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/strings.h \
+ ../lua-5.2.1/src/lua.h ../../musl-1.1.11/include/stdarg.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+ltablib.o: ../lua-5.2.1/src/ltablib.c ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+loadlib.o: ../lua-5.2.1/src/loadlib.c ../../musl-1.1.11/include/stdlib.h \
+ ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/alloca.h ../../musl-1.1.11/include/string.h \
+ ../../musl-1.1.11/include/strings.h ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h ../../musl-1.1.11/include/stddef.h \
+ ../lua-5.2.1/src/luaconf.h ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lauxlib.h \
+ ../lua-5.2.1/src/lualib.h
+linit.o: ../lua-5.2.1/src/linit.c ../lua-5.2.1/src/lua.h \
+ ../../musl-1.1.11/include/stdarg.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../../musl-1.1.11/include/stddef.h ../lua-5.2.1/src/luaconf.h \
+ ../../musl-1.1.11/include/limits.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ ../../musl-1.1.11/include/stdio.h ../lua-5.2.1/src/lualib.h \
+ ../lua-5.2.1/src/lauxlib.h

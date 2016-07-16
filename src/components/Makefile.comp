@@ -1,0 +1,60 @@
+# include ../../../Makefile.inc first!
+
+IMPLDIR=$(CDIR)/implementation/
+INTERDIR=$(CDIR)/interface/
+LIBDIR=$(CDIR)/lib/
+MANDITORY_LIB=cos_manditory.o
+CINC=-I./ -I$(CDIR)/include/ -I$(SHAREDINC) -I$(CDIR)/lib/ck/include -I$(CDIR)/lib/ps/
+MUSLDIR=$(CDIR)/lib/musl-1.1.11
+MUSLBIN=$(MUSLDIR)/bin
+MUSLCC=$(MUSLBIN)/musl-$(CC)
+MUSLINC=-I$(MUSLDIR)/include
+
+PSINC = $(CDIR)/lib/ps/
+PSOBJ = $(CDIR)/lib/ps/libps.a
+
+LWIPBASE=$(CDIR)/lib/lwip
+LWIPDIR=$(LWIPBASE)/lwip
+LWIPOBJ=$(LWIPBASE)/cos/net_stack.o
+LWIPINC=-I$(LWIPDIR)/src/include -I$(LWIPBASE)/cos/include/ 
+
+CCVDIR=$(CDIR)/lib/libccv
+CCVOBJ=$(CCVDIR)/cos_libccv.a
+CCVINC=-I$(CCVDIR)
+
+LIBSUPCXXDIR=$(CDIR)/lib/libcxx
+LIBSUPCXXOBJ=$(LIBSUPCXXDIR)/libsupc++.a
+LIBSUPCXXINC=-I$(LIBSUPCXXDIR)/build/include
+
+LIBSTDCXXDIR=$(CDIR)/lib/libcxx
+LIBSTDCXXOBJ=$(LIBSTDCXXDIR)/libstdc++.a
+LIBSTDCXXINC=-I$(LIBSTDCXXDIR)/build/include
+
+LIBOPENCVDIR=$(CDIR)/lib/libopencv
+LIBOPENCVOBJ=$(LIBOPENCVDIR)/libopencv.a
+LIBOPENCVINC=-I$(LIBOPENCVDIR)/include
+
+POSIX_LIB=$(CDIR)/lib/posix/posix.o
+
+#PONY=$(CDIR)/cidl/
+PONY=/bin/echo
+
+LUABASE=$(CDIR)/lib/lua
+LUADIR=$(LUABASE)/lua-5.2.1
+LUAOBJ=$(LUABASE)/cos/lua_lang.o
+LUAINC=-I$(LUADIR)/src -I$(LUABASE)/cos/include
+
+INC_PATH=-I./ -I$(CDIR)/include/ -I$(CDIR)/interface/
+# FIXME: dietlibc is now compiled with fno merge constants which is
+# probably ballooning its size.  Fix this need for no merge constants
+# in cos_loader.
+SHARED_FLAGS=-fno-merge-constants -nostdinc -nostdlib
+#OPT= -ggdb3
+OPT= -O3
+CFLAGS=-D__x86__ -Wall -Wextra -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -Wno-parentheses -fno-stack-protector -fno-omit-frame-pointer $(INC_PATH) $(MUSLINC) $(LWIPINC) $(LUAINC) $(OPT) $(SHARED_FLAGS) 
+CXXFLAGS=-fno-exceptions -fno-threadsafe-statics -Wno-write-strings $(LIBOPENCVINC) $(CFLAGS) $(LIBSTDCXXINC) 
+MUSLCFLAGS=$(CFLAGS)  -lc -lgcc -Xlinker -r
+ASFLAGS=$(INC_PATH) $(SHARED_FLAGS)
+
+SERVER_STUB=s_stub.o
+CLIENT_STUB=c_stub.o

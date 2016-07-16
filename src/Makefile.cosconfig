@@ -1,0 +1,5 @@
+HOME_DIR=/home/ryx/
+CODE_DIR=$(HOME_DIR)/research/
+TRANS_DIR=$(HOME_DIR)/transfer/
+LDIR=$(CODE_DIR)/linux-2.6.36/
+TEST_DIR=/root/experiments/

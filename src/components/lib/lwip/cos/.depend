@@ -1,0 +1,984 @@
+mem.o: ../lwip/src/core/mem.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h
+memp.o: ../lwip/src/core/memp.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/memp.h ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h \
+ ../lwip/src/include/lwip/pbuf.h ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/udp.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/ip4_addr.h ../lwip/src/include/lwip/ip6_addr.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/raw.h \
+ ../lwip/src/include/lwip/igmp.h ../lwip/src/include/lwip/api.h \
+ ../lwip/src/include/lwip/priv/api_msg.h \
+ ../lwip/src/include/lwip/sockets.h ../lwip/src/include/lwip/sys.h \
+ ../lwip/src/include/lwip/timers.h ../lwip/src/include/netif/etharp.h \
+ ../lwip/src/include/lwip/ip_frag.h ../lwip/src/include/lwip/dns.h \
+ ../lwip/src/include/lwip/netdb.h ../lwip/src/include/netif/ppp/ppp.h \
+ ../lwip/src/include/netif/ppp/pppos.h \
+ ../lwip/src/include/netif/ppp/pppoe.h \
+ ../lwip/src/include/netif/ppp/pppol2tp.h ../lwip/src/include/lwip/nd6.h \
+ ../lwip/src/include/lwip/ip6_frag.h ../lwip/src/include/lwip/mld6.h \
+ ../lwip/src/include/lwip/tcp.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/tcpip.h \
+ ../lwip/src/include/lwip/priv/tcp_priv.h \
+ ../lwip/src/include/lwip/priv/tcpip_priv.h
+netif.o: ../lwip/src/core/netif.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/ip_addr.h \
+ ../lwip/src/include/lwip/ip4_addr.h ../lwip/src/include/lwip/ip6_addr.h \
+ ../lwip/src/include/lwip/netif.h ../lwip/src/include/lwip/err.h \
+ ../lwip/src/include/lwip/pbuf.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/memp.h ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h \
+ ../lwip/src/include/lwip/priv/tcp_priv.h ../lwip/src/include/lwip/tcp.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/udp.h ../lwip/src/include/lwip/snmp.h \
+ ../lwip/src/include/lwip/igmp.h ../lwip/src/include/netif/etharp.h \
+ ../lwip/src/include/lwip/sys.h
+pbuf.o: ../lwip/src/core/pbuf.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/memp.h ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/pbuf.h ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/sys.h ../lwip/src/include/lwip/priv/tcp_priv.h \
+ ../lwip/src/include/lwip/tcp.h ../lwip/src/include/lwip/ip.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/ip4.h ../lwip/src/include/lwip/ip6.h \
+ ../lwip/src/include/lwip/icmp.h ../lwip/src/include/lwip/pbuf_slab.h \
+ /home/ryx//research//composite/src//components//lib/ps/ps_slab.h \
+ /home/ryx//research//composite/src//components//lib/ps/ps_list.h \
+ /home/ryx//research//composite/src//components//lib/ps/ps_plat.h \
+ ../../musl-1.1.11/include/assert.h ../../musl-1.1.11/include/stdio.h \
+ /home/ryx//research//composite/src//components//lib/ps/ps_global.h
+raw.o: ../lwip/src/core/raw.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/err.h ../lwip/src/include/lwip/pbuf.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/raw.h ../lwip/src/include/lwip/ip.h \
+ ../lwip/src/include/lwip/ip4.h ../lwip/src/include/lwip/ip6.h \
+ ../lwip/src/include/lwip/inet_chksum.h
+stats.o: ../lwip/src/core/stats.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/stats.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h
+sys.o: ../lwip/src/core/sys.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/sys.h
+tcp.o: ../lwip/src/core/tcp.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/memp.h ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/tcp.h \
+ ../lwip/src/include/lwip/pbuf.h ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/ip_addr.h \
+ ../lwip/src/include/lwip/ip4_addr.h ../lwip/src/include/lwip/ip6_addr.h \
+ ../lwip/src/include/lwip/netif.h ../lwip/src/include/lwip/stats.h \
+ ../lwip/src/include/lwip/ip4.h ../lwip/src/include/lwip/ip6.h \
+ ../lwip/src/include/lwip/icmp.h ../lwip/src/include/lwip/priv/tcp_priv.h \
+ ../lwip/src/include/lwip/nd6.h
+tcp_in.o: ../lwip/src/core/tcp_in.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/priv/tcp_priv.h ../lwip/src/include/lwip/tcp.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/pbuf.h \
+ ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/inet_chksum.h ../lwip/src/include/lwip/nd6.h
+tcp_out.o: ../lwip/src/core/tcp_out.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/priv/tcp_priv.h ../lwip/src/include/lwip/tcp.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/pbuf.h \
+ ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/inet_chksum.h
+udp.o: ../lwip/src/core/udp.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/udp.h ../lwip/src/include/lwip/pbuf.h \
+ ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/netif.h ../lwip/src/include/lwip/ip_addr.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/stats.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/ip.h \
+ ../lwip/src/include/lwip/ip4.h ../lwip/src/include/lwip/ip6.h \
+ ../lwip/src/include/lwip/inet_chksum.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/icmp6.h ../lwip/src/include/lwip/snmp.h \
+ ../lwip/src/include/lwip/dhcp.h
+init.o: ../lwip/src/core/init.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/init.h ../lwip/src/include/lwip/stats.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/sys.h \
+ ../lwip/src/include/lwip/pbuf.h ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/netif.h ../lwip/src/include/lwip/ip_addr.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/sockets.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/raw.h \
+ ../lwip/src/include/lwip/udp.h ../lwip/src/include/lwip/priv/tcp_priv.h \
+ ../lwip/src/include/lwip/tcp.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/autoip.h ../lwip/src/include/lwip/igmp.h \
+ ../lwip/src/include/lwip/dns.h ../lwip/src/include/lwip/timers.h \
+ ../lwip/src/include/netif/etharp.h ../lwip/src/include/lwip/nd6.h \
+ ../lwip/src/include/lwip/mld6.h ../lwip/src/include/lwip/api.h \
+ ../lwip/src/include/netif/ppp/ppp_impl.h
+inet_chksum.o: ../lwip/src/core/inet_chksum.c \
+ ../lwip/src/include/lwip/opt.h include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/inet_chksum.h ../lwip/src/include/lwip/pbuf.h \
+ ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/ip4_addr.h ../lwip/src/include/lwip/ip6_addr.h
+def.o: ../lwip/src/core/def.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/def.h
+timers.o: ../lwip/src/core/timers.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/timers.h \
+ ../lwip/src/include/lwip/priv/tcp_priv.h ../lwip/src/include/lwip/tcp.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/pbuf.h \
+ ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/icmp.h
+icmp.o: ../lwip/src/core/ipv4/icmp.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h
+ip4.o: ../lwip/src/core/ipv4/ip4.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/ip.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/pbuf.h ../lwip/src/include/lwip/err.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/netif.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/memp.h ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/ip4.h \
+ ../lwip/src/include/lwip/ip6.h ../lwip/src/include/lwip/ip_frag.h \
+ ../lwip/src/include/lwip/inet_chksum.h ../lwip/src/include/lwip/icmp.h \
+ ../lwip/src/include/lwip/igmp.h ../lwip/src/include/lwip/raw.h \
+ ../lwip/src/include/lwip/udp.h ../lwip/src/include/lwip/priv/tcp_priv.h \
+ ../lwip/src/include/lwip/tcp.h ../lwip/src/include/lwip/dhcp.h \
+ ../lwip/src/include/lwip/autoip.h
+ip4_addr.o: ../lwip/src/core/ipv4/ip4_addr.c \
+ ../lwip/src/include/lwip/opt.h include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/ip_addr.h ../lwip/src/include/lwip/def.h \
+ ../lwip/src/include/lwip/ip4_addr.h ../lwip/src/include/lwip/ip6_addr.h \
+ ../lwip/src/include/lwip/netif.h ../lwip/src/include/lwip/err.h \
+ ../lwip/src/include/lwip/pbuf.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/stats.h ../lwip/src/include/lwip/mem.h \
+ ../lwip/src/include/lwip/memp.h ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h
+ip_frag.o: ../lwip/src/core/ipv4/ip_frag.c ../lwip/src/include/lwip/opt.h \
+ include/lwipopts.h \
+ /home/ryx//research//composite/src//components//include/cos_alloc.h \
+ ../../musl-1.1.11/include/stddef.h \
+ ../../musl-1.1.11/include/bits/alltypes.h \
+ ../lwip/src/include/lwip/debug.h ../lwip/src/include/lwip/arch.h \
+ include/arch/cc.h \
+ /home/ryx//research//composite/src//components//include/print.h \
+ ../../musl-1.1.11/include/string.h ../../musl-1.1.11/include/features.h \
+ ../../musl-1.1.11/include/strings.h \
+ /home/ryx//research//composite/src//components//include/cos_debug.h \
+ /home/ryx//research//composite/src//components//include/cos_component.h \
+ /home/ryx//research//composite/src//kernel/include/shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../asm_ipc_defs.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_types.h \
+ /home/ryx//research//composite/src//kernel/include/shared/./consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../debug.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cos_config.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/cpu_ghz.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../measurement.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../cpuid.h \
+ /home/ryx//research//composite/src//kernel/include/shared/../shared/consts.h \
+ /home/ryx//research//composite/src//kernel/include/shared/atomic_sync.h \
+ ../../musl-1.1.11/include/errno.h ../../musl-1.1.11/include/bits/errno.h \
+ /home/ryx//research//composite/src//kernel/include/shared/cos_config.h \
+ ../lwip/src/include/lwip/ip_frag.h ../lwip/src/include/lwip/err.h \
+ ../lwip/src/include/lwip/pbuf.h \
+ /home/ryx//research//composite/src//components//include/cbuf.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_meta.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_mgr.h \
+ /home/ryx//research//composite/src//components//include/ck_ring_cos.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_cc.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_md.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_limits.h \
+ ../../musl-1.1.11/include/limits.h \
+ ../../musl-1.1.11/include/bits/limits.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/ck_stdint.h \
+ ../../musl-1.1.11/include/stdint.h \
+ ../../musl-1.1.11/include/bits/stdint.h \
+ ../../musl-1.1.11/include/stdbool.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_pr.h \
+ /home/ryx//research//composite/src//components//lib/ck/include/gcc/ck_f_pr.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_debug.h \
+ /home/ryx//research//composite/src//components//interface//cbuf_mgr/cbuf_vect.h \
+ /home/ryx//research//composite/src//components//include/cvect.h \
+ /home/ryx//research//composite/src//components//include/cos_list.h \
+ /home/ryx//research//composite/src//components//include/bitmap.h \
+ /home/ryx//research//composite/src//components//include/cos_synchronization.h \
+ /home/ryx//research//composite/src//components//include/cos_time.h \
+ ../lwip/src/include/lwip/netif.h ../lwip/src/include/lwip/ip_addr.h \
+ ../lwip/src/include/lwip/def.h ../lwip/src/include/lwip/ip4_addr.h \
+ ../lwip/src/include/lwip/ip6_addr.h ../lwip/src/include/lwip/stats.h \
+ ../lwip/src/include/lwip/mem.h ../lwip/src/include/lwip/memp.h \
+ ../lwip/src/include/lwip/priv/memp_std.h \
+ ../lwip/src/include/lwip/priv/memp_priv.h ../lwip/src/include/lwip/ip.h \
+ ../lwip/src/include/lwip/ip4.h ../lwip/src/include/lwip/ip6.h \
+ ../lwip/src/include/lwip/inet_chksum.h ../lwip/src/include/lwip/icmp.h
